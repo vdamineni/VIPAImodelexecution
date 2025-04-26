@@ -1,6 +1,6 @@
 project:
-  name: "SAT-2 English Text Classifier"
-  description: "Classification of English text related to SAT-2 content using a fine-tuned DistilBERT model"
+  name: "SAT English Text Classifier"
+  description: "Classification of English text related to SAT content using a fine-tuned DistilBERT model"
   homepage: "https://github.com/vdamineni/VIPAImodelexecution.git"
   authors:
     - vdamineni3@gatech.edu
