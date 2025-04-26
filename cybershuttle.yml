@@ -31,5 +31,6 @@ additional_dependencies:
     - pip
   pip:
     - streamlit
-    - 'transformers[torch]'
+    - transformers
+    - torch
     - matplotlib
