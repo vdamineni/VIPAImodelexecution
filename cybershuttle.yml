@@ -1,0 +1,35 @@
+project:
+  name: "SAT-2 English Text Classifier"
+  description: "Streamlit web app that allows non-expert users to classify English text related to SAT-2 content using a fine-tuned DistilBERT model"
+  homepage: https://github.com/vdamineni/VIPAImodelexecution
+  authors:
+    - vdamineni3@gatech.edu
+    - asherman39@gatech.edu
+    - mkim836@gatech.edu
+    - krishr@gatech.edu
+  tags:
+    - cybershuttle
+    - airavata-courses
+    - spring-2025
+
+workspace:
+  location: /workspace
+  resources:
+    min_cpu: 4
+    min_gpu: 0
+    min_mem: 0
+    gpu_mem: 1024
+  model_collection:
+    - source: cybershuttle
+      identifier: cybershuttle-reference
+      mount_point: /cybershuttle_data/cybershuttle-reference
+  data_collection: []
+
+additional_dependencies:
+  conda:
+    - python=3.10
+    - pip
+    - streamlit
+    - transformers[torch]
+    - matplotlib
+  pip: []

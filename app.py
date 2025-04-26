@@ -5,18 +5,22 @@ import matplotlib.pyplot as plt
 # Page title
 st.set_page_config(page_title="SAT-2 Text Classifier", layout="centered")
 st.title("📚 SAT-2 English Text Classifier")
-st.write("This app uses a fine-tuned DistilBERT model to classify text related to SAT-2 English exam topics.")
+st.write(
+    "This app uses a fine-tuned DistilBERT model to classify text related to SAT-2 English exam topics."
+)
 
 # Text input
 user_input = st.text_area("Enter your text below:", height=200)
 
 # Help and examples
 with st.expander("💡 Help & Examples"):
-    st.markdown("""
+    st.markdown(
+        """
     - This model is fine-tuned to recognize topics in English SAT-2 exam texts.
     - Try pasting a paragraph from a literature article or grammar question.
     - **Example Input:** _'The protagonist's moral struggle illustrates the conflict between personal duty and societal norms.'_
-    """)
+    """
+    )
 
 # Button to run classification
 if st.button("Classify"):
@@ -26,12 +30,18 @@ if st.button("Classify"):
         with st.spinner("Classifying..."):
             try:
                 # Load model and tokenizer
-                tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased-finetuned-sst-2-english")
-                model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased-finetuned-sst-2-english",trust_remote_code=True )
-
+                tokenizer = AutoTokenizer.from_pretrained(
+                    "distilbert-base-uncased-finetuned-sst-2-english"
+                )
+                model = AutoModelForSequenceClassification.from_pretrained(
+                    "distilbert-base-uncased-finetuned-sst-2-english",
+                    trust_remote_code=True,
+                )
 
                 # Prepare pipeline
-                classifier = pipeline("text-classification", model=model, tokenizer=tokenizer)
+                classifier = pipeline(
+                    "text-classification", model=model, tokenizer=tokenizer
+                )
 
                 # Perform classification
                 result = classifier(user_input)[0]
