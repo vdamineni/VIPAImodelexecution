@@ -1,7 +1,7 @@
 project:
   name: "SAT-2 English Text Classifier"
   description: "Classification of English text related to SAT-2 content using a fine-tuned DistilBERT model"
-  homepage: https://github.com/vdamineni/VIPAImodelexecution.git
+  homepage: "https://github.com/vdamineni/VIPAImodelexecution.git"
   authors:
     - vdamineni3@gatech.edu
     - asherman39@gatech.edu
@@ -18,8 +18,12 @@ workspace:
     min_gpu: 0
     min_mem: 4096
     gpu_mem: 1024
-  model_collection: []
-  data_collection: []
+
+model_collection: 
+  - name: "distilbert-base-uncased"
+    source: "huggingface"
+
+data_collection: []  # Keep empty unless external dataset needed
 
 additional_dependencies:
   conda:
