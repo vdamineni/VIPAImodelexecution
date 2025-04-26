@@ -29,7 +29,7 @@ additional_dependencies:
   conda:
     - python=3.10
     - pip
+  pip:
     - streamlit
-    - transformers[torch]
+    - 'transformers[torch]'
     - matplotlib
-  pip: []
