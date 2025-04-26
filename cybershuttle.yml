@@ -9,7 +9,6 @@ project:
     - krishr@gatech.edu
   tags:
     - airavata-courses
-    - spring-2025
     - distilbert
 
 workspace:
