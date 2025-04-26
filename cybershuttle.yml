@@ -1,6 +1,6 @@
 project:
   name: "SAT-2 English Text Classifier"
-  description: "Streamlit web app that allows non-expert users to classify English text related to SAT-2 content using a fine-tuned DistilBERT model"
+  description: "Classification of English text related to SAT-2 content using a fine-tuned DistilBERT model"
   homepage: https://github.com/vdamineni/VIPAImodelexecution
   authors:
     - vdamineni3@gatech.edu
@@ -8,16 +8,16 @@ project:
     - mkim836@gatech.edu
     - krishr@gatech.edu
   tags:
-    - cybershuttle
     - airavata-courses
     - spring-2025
+    - distilbert
 
 workspace:
   location: /workspace
   resources:
     min_cpu: 4
     min_gpu: 0
-    min_mem: 0
+    min_mem: 4096
     gpu_mem: 1024
   model_collection:
     - source: cybershuttle
