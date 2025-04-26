@@ -8,8 +8,8 @@ project:
     - mkim836@gatech.edu
     - krishr@gatech.edu
   tags:
+    - cybershuttle
     - airavata-courses
-    - distilbert
 
 workspace:
   location: /workspace
