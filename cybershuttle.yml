@@ -3,9 +3,7 @@ project:
   description: "Classification of English text related to SAT-2 content using a fine-tuned DistilBERT model"
   homepage: "https://github.com/vdamineni/VIPAImodelexecution"
   authors:
-    - vdamineni3@gatech.edu
     - asherman39@gatech.edu
-    - mkim836@gatech.edu
     - krishr@gatech.edu
   tags:
     - cybershuttle
