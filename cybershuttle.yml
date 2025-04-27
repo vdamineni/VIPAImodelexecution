@@ -1,29 +1,26 @@
 project:
-  name: "SAT English Text Classifier"
-  description: "Classification of English text related to SAT content using a finetuned DistilBERT model"
-  homepage: "https://github.com/vdamineni/VIPAImodelexecution.git"
+  name: "Getting started with Cybershuttle"
+  description: "Run a simulation and understand the minimum macros required to run Cybershuttle"
+  homepage: https://github.com/cyber-shuttle/cybershuttle-reference
   authors:
-    - vdamineni3@gatech.edu
-    - asherman39@gatech.edu
-    - mkim836@gatech.edu
-    - krishr@gatech.edu
+    - smarru@gatech.edu
   tags:
     - cybershuttle
-    - airavata-courses
+    - apache-airavata
+    - reference
 
 workspace:
   location: /workspace
   resources:
     min_cpu: 4
     min_gpu: 0
-    min_mem: 4096
+    min_mem: 0
     gpu_mem: 1024
-
-model_collection: 
-  - name: "distilbert-base-uncased"
-    source: "huggingface"
-
-data_collection: []
+  model_collection:
+    - source: cybershuttle
+      identifier: cybershuttle-reference
+      mount_point: /cybershuttle_data/cybershuttle-reference
+  data_collection: []
 
 additional_dependencies:
   conda:
