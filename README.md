@@ -44,4 +44,9 @@ The protagonist’s moral struggle illustrates the conflict between personal dut
 •  PyTorch
 •  Matplotlib (optional for visual confidence bar)
 
+## Cybershuttle Usage
+1. Access notebook on Cybershuttle: https://hub.cybershuttle.org/hub/user-redirect/lab/tree/notebook.ipynb
+2. Modify line of code with user input text
+3. Run all cells of notebook
+
 
