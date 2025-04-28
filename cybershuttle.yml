@@ -6,6 +6,7 @@ project:
     - asherman39@gatech.edu
     - krishr@gatech.edu
     - vdamineni3@gatech.edu
+    - mkim836@gatech.edu
   tags:
     - cybershuttle
     - airavata-courses
@@ -30,3 +31,4 @@ additional_dependencies:
     - transformers
     - torch
     - matplotlib
+    - gradio
