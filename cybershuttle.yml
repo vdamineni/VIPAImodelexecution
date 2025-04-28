@@ -5,11 +5,11 @@ project:
   authors:
     - asherman39@gatech.edu
     - krishr@gatech.edu
-    - mkim836@gatech.edu
     - vdamineni3@gatech.edu
   tags:
     - cybershuttle
     - airavata-courses
+    - natural-language-processing
 
 workspace:
   location: /workspace
